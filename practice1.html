@@ -17,17 +17,43 @@
           alert($("#input1").val());
         });
         $("#btn4").click(function () {
-          $('#para3').css('background-color', 'cyan');
+          $("#para3").css("background-color", "cyan");
         });
         $("#btn5").click(function () {
           $("#para1").text("Text Changed");
         });
         $("#btn6").click(function () {
-          $('#para3').html('<h3>Heading 3</h3>');
-        })
+          $("#para3").html("<h3>Heading 3</h3>");
+        });
         $("#btn7").click(function () {
-          $('#input1').val('Value Changed');
-        })
+          $("#input1").val("Value Changed");
+        });
+        $("#btn8").click(function () {
+          $(this).hide();
+        });
+        $(".btn9").click(function () {
+          $(this).hide();
+        });
+        // demoing the on method
+        $("p").on({
+          click: function () {
+            console.log("Thanks for clicking", this);
+          },
+          mouseleave: function () {
+            console.log("mouseleave");
+          },
+        });
+        // AJAX
+        $('#ajaxData').click(function () {
+          $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) {
+            alert(data);
+          });
+        });
+        $('#ajaxSuccess').click(function () {
+          $.get('https://code.jquery.com/jquery-3.3.1.js', function (data, status) {
+            alert(status);
+          });
+        });
       });
     </script>
   </head>
@@ -52,5 +78,15 @@
     <button id="btn5">Set Text</button>
     <button id="btn6">Set HTML</button>
     <button id="btn7">Set Value</button>
+    <br />
+    <br />
+    <button id="btn8">0 Hide this button (id)</button>
+    <button class="btn9">1 Hide this button (class)</button>
+    <button class="btn9">2 Hide this button (class)</button>
+    <button class="btn9">3 Hide this button (class)</button>
+    <br />
+    <br />
+    <button id="ajaxData">AJAX Data</button>
+    <button id="ajaxSuccess">AJAX Success</button>
   </body>
 </html>
