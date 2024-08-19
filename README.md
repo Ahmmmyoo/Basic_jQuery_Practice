@@ -9,6 +9,8 @@ src = "https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"
 ></script>
 ```
 
+you can also add jQuery locally by downloading the jQuery script and adding it to your project 
+
 #### jQuery Syntax:
 `$('selector).action()`
 
