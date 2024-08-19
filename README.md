@@ -1,6 +1,7 @@
 # Basic_jQuery_Practice
 A Practice Repository for jQuery
 
+(jQuery)[www.jquery.com]
 
 add jquery through jsdelivr
 ```
