@@ -58,4 +58,9 @@ document/window events
 - scroll 
 - unload
 
-more about jQuery
+Effects
+- Basic\
+ `.hide()`\
+ `.show()`\
+ `.toggle()`
+
