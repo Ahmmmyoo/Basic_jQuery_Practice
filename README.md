@@ -59,8 +59,24 @@ document/window events
 - unload
 
 Effects
-- Basic\
- `.hide()`\
- `.show()`\
+- **Basic** \
+ `.hide()` \
+ `.show()` \
  `.toggle()`
 
+- **Custom** \
+  `.animate()` \
+  `.delay()` \
+  `.finish()` \
+  `.stop()` 
+
+- **Fading** \
+  `.fadeIn()` \
+  `.fadeOut()` \
+  `.fadeTo()` \
+  `.fadeToggle()` 
+
+- **Sliding** \
+  `.slideDown()` \
+  `.slideUp()` \
+  `.slideToggle()` 
